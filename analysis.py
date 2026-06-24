@@ -13,8 +13,8 @@ ja uruchomic poza Power BI.
 
 Wymagane kolumny w danych wejsciowych:
     - Age_Band_of_Driver : przedzial wiekowy kierowcy (np. "26 - 35")
-    - Sex_of_Driver      : plec kierowcy (np. "Male", "Female")
-    - Fatal %            : wskaznik smiertelnosci dla danego rekordu
+    - Sex_of_Driver : plec kierowcy (np. "Male", "Female")
+    - Fatal % : wskaznik smiertelnosci dla danego rekordu
 
 Autor: Igor Kozak
 """
@@ -45,7 +45,6 @@ def plot_risk_heatmap(dataset: pd.DataFrame):
         linecolor="white",
     )
 
-    # Przezroczyste tlo (przydatne przy osadzaniu w dashboardzie)
     fig.patch.set_alpha(0.0)
     ax.patch.set_alpha(0.0)
 
